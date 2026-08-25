@@ -13,8 +13,8 @@
     "naming-sides-title",
     "naming-sides-rule",
     "naming-sides-ratios",
-    "naming-sides-visual",
     "naming-sides-strategy",
+    "naming-sides-visual",
     "naming-sides-practice-heading",
     "naming-sides-practice",
     "multiply-divide-title",
@@ -173,23 +173,12 @@
       }
     },
     {
-      "id": "layout-naming-sides-visual",
-      "type": "stack",
-      "columns": [
-        [
-          "naming-sides-visual"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
-      }
-    },
-    {
       "id": "layout-naming-sides-practice-heading",
       "type": "stack",
       "columns": [
         [
           "naming-sides-strategy",
+          "naming-sides-visual",
           "naming-sides-practice-heading"
         ]
       ],
