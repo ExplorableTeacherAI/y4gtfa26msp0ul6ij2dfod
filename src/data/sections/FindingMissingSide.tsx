@@ -1,7 +1,7 @@
 import { type ReactElement } from "react";
 import { Block } from "@/components/templates";
 import { StackLayout } from "@/components/layouts";
-import { EditableH1, EditableParagraph } from "@/components/atoms";
+import { EditableH1, EditableParagraph, InlineFormula } from "@/components/atoms";
 
 export const findingMissingSideBlocks: ReactElement[] = [
     <StackLayout key="layout-ramp-intro-title" maxWidth="xl">
@@ -29,8 +29,9 @@ export const findingMissingSideBlocks: ReactElement[] = [
                 By the end of this lesson you will find a missing side of a right triangle
                 from one angle and one known side, using sine, cosine or tangent. You can
                 already spot the right angle and the hypotenuse, write one length over
-                another as a decimal, solve something like x divided by 8 equals 0.5, and
-                get sin, cos and tan from a calculator. That is everything you need. What
+                another as a decimal, solve something like{" "}
+                <InlineFormula latex="\frac{x}{8} = 0.5" />, and get sin, cos and tan from
+                a calculator. That is everything you need. What
                 is left is choosing which of the three to use, and what to do with it.
             </EditableParagraph>
         </Block>
