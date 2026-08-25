@@ -1,4 +1,321 @@
 {
-  "version": 2,
-  "blockIds": []
+  "version": 3,
+  "blockIds": [
+    "ramp-intro-title",
+    "ramp-intro-hook",
+    "ramp-intro-promise",
+    "same-ratio-title",
+    "same-ratio-setup",
+    "same-ratio-visual",
+    "same-ratio-payoff",
+    "same-ratio-practice-heading",
+    "same-ratio-practice",
+    "naming-sides-title",
+    "naming-sides-rule",
+    "naming-sides-ratios",
+    "naming-sides-visual",
+    "naming-sides-strategy",
+    "naming-sides-practice-heading",
+    "naming-sides-practice",
+    "multiply-divide-title",
+    "multiply-divide-cases",
+    "multiply-divide-visual",
+    "multiply-divide-warning",
+    "multiply-divide-practice-heading",
+    "multiply-divide-practice",
+    "wrap-up-title",
+    "wrap-up-summary",
+    "wrap-up-next"
+  ],
+  "rows": [
+    {
+      "id": "layout-ramp-intro-title",
+      "type": "stack",
+      "columns": [
+        [
+          "ramp-intro-title"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-ramp-intro-hook",
+      "type": "stack",
+      "columns": [
+        [
+          "ramp-intro-hook"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-ramp-intro-promise",
+      "type": "stack",
+      "columns": [
+        [
+          "ramp-intro-promise"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-same-ratio-title",
+      "type": "stack",
+      "columns": [
+        [
+          "same-ratio-title"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-same-ratio-setup",
+      "type": "stack",
+      "columns": [
+        [
+          "same-ratio-setup"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-same-ratio-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "same-ratio-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-same-ratio-payoff",
+      "type": "stack",
+      "columns": [
+        [
+          "same-ratio-payoff"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-same-ratio-practice-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "same-ratio-practice-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-same-ratio-practice",
+      "type": "stack",
+      "columns": [
+        [
+          "same-ratio-practice"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-naming-sides-title",
+      "type": "stack",
+      "columns": [
+        [
+          "naming-sides-title"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-naming-sides-rule",
+      "type": "stack",
+      "columns": [
+        [
+          "naming-sides-rule"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-naming-sides-ratios",
+      "type": "stack",
+      "columns": [
+        [
+          "naming-sides-ratios"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-naming-sides-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "naming-sides-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-naming-sides-practice-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "naming-sides-strategy",
+          "naming-sides-practice-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-naming-sides-practice",
+      "type": "stack",
+      "columns": [
+        [
+          "naming-sides-practice"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-multiply-divide-title",
+      "type": "stack",
+      "columns": [
+        [
+          "multiply-divide-title"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-multiply-divide-cases",
+      "type": "stack",
+      "columns": [
+        [
+          "multiply-divide-cases"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-multiply-divide-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "multiply-divide-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-multiply-divide-warning",
+      "type": "stack",
+      "columns": [
+        [
+          "multiply-divide-warning"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-multiply-divide-practice-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "multiply-divide-practice-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-multiply-divide-practice",
+      "type": "stack",
+      "columns": [
+        [
+          "multiply-divide-practice"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-wrap-up-title",
+      "type": "stack",
+      "columns": [
+        [
+          "wrap-up-title"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-wrap-up-summary",
+      "type": "stack",
+      "columns": [
+        [
+          "wrap-up-summary"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-wrap-up-next",
+      "type": "stack",
+      "columns": [
+        [
+          "wrap-up-next"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    }
+  ]
 }
