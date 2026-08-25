@@ -1,0 +1,38 @@
+import { type ReactElement } from "react";
+import { Block } from "@/components/templates";
+import { StackLayout } from "@/components/layouts";
+import { EditableH2, EditableParagraph } from "@/components/atoms";
+
+export const wrappingUpBlocks: ReactElement[] = [
+    <StackLayout key="layout-wrap-up-title" maxWidth="xl">
+        <Block id="wrap-up-title" padding="md">
+            <EditableH2 id="h2-wrap-up-title" blockId="wrap-up-title">
+                Wrapping Up
+            </EditableH2>
+        </Block>
+    </StackLayout>,
+
+    <StackLayout key="layout-wrap-up-summary" maxWidth="xl">
+        <Block id="wrap-up-summary" padding="sm">
+            <EditableParagraph id="para-wrap-up-summary" blockId="wrap-up-summary">
+                You can now take a right triangle with one angle and one known side and work
+                out a side you cannot reach, including the height of that skate ramp. The
+                whole method rests on one idea: an angle fixes the ratio between two sides,
+                whatever the size of the triangle. Sine, cosine and tangent are just the
+                three ratios worth naming, and the calculator remembers them for you.
+            </EditableParagraph>
+        </Block>
+    </StackLayout>,
+
+    <StackLayout key="layout-wrap-up-next" maxWidth="xl">
+        <Block id="wrap-up-next" padding="sm">
+            <EditableParagraph id="para-wrap-up-next" blockId="wrap-up-next">
+                The habit worth keeping is the order: name the sides from the marked angle,
+                write the equation, then look at where the unknown sits before you touch a
+                key. Next comes the reverse journey, starting from two known sides and
+                recovering the angle itself, which is how a phone works out the tilt it is
+                being held at.
+            </EditableParagraph>
+        </Block>
+    </StackLayout>,
+];
