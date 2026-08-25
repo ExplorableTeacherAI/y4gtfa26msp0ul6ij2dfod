@@ -77,6 +77,30 @@ export const variableDefinitions: Record<string, VariableDefinition> = {
     // ADD YOUR VARIABLES HERE
     // ========================================
 
+    rampAngle: {
+        defaultValue: 30,
+        type: 'number',
+        label: 'Slope angle',
+        description: 'The angle the skate ramp rises from the ground',
+        unit: '°',
+        min: 15,
+        max: 60,
+        step: 1,
+        color: '#6366f1',
+    },
+
+    rampSlopeLength: {
+        defaultValue: 5,
+        type: 'number',
+        label: 'Sloped surface',
+        description: 'The length of the sloped riding surface of the ramp (the hypotenuse)',
+        unit: 'm',
+        min: 2,
+        max: 8,
+        step: 0.5,
+        color: '#0ea5e9',
+    },
+
     // Uncomment and modify these examples for your lesson:
 
     /*
