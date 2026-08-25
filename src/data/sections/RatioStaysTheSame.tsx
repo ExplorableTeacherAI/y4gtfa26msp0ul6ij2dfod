@@ -1,4 +1,4 @@
-import { useState, type ReactElement } from "react";
+import { type ReactElement } from "react";
 import { Block } from "@/components/templates";
 import { StackLayout } from "@/components/layouts";
 import {
@@ -6,10 +6,8 @@ import {
     EditableH3,
     EditableParagraph,
     Slider,
-    Button,
-    RadioGroup,
-    RadioGroupItem,
 } from "@/components/atoms";
+import { PracticeQuestion } from "./shared/PracticeQuestion";
 import { useVar, useSetVar } from "@/stores";
 
 /* ------------------------------------------------------------------
@@ -188,78 +186,10 @@ const RampRatioExplorer = () => {
     );
 };
 
-/* ------------------------------------------------------------------
- * Practice
- * ------------------------------------------------------------------ */
-interface PracticeOption {
-    id: string;
-    label: string;
-    correct?: boolean;
-    feedback: string;
-}
-
-const PracticeQuestion = ({
-    prompt,
-    options,
-}: {
-    prompt: string;
-    options: PracticeOption[];
-}) => {
-    const [choice, setChoice] = useState<string>("");
-    const [checked, setChecked] = useState(false);
-    const selected = options.find((option) => option.id === choice);
-
-    return (
-        <div className="rounded-lg border border-slate-200 p-4">
-            <div className="mb-3 text-slate-800">{prompt}</div>
-            <RadioGroup
-                value={choice}
-                onValueChange={(value) => {
-                    setChoice(value);
-                    setChecked(false);
-                }}
-                className="space-y-2"
-            >
-                {options.map((option) => (
-                    <label
-                        key={option.id}
-                        htmlFor={`${prompt.slice(0, 12)}-${option.id}`}
-                        className="flex cursor-pointer items-center gap-2 text-slate-700"
-                    >
-                        <RadioGroupItem
-                            value={option.id}
-                            id={`${prompt.slice(0, 12)}-${option.id}`}
-                        />
-                        <span>{option.label}</span>
-                    </label>
-                ))}
-            </RadioGroup>
-            <Button
-                className="mt-3"
-                variant="outline"
-                disabled={!choice}
-                onClick={() => setChecked(true)}
-            >
-                Check
-            </Button>
-            {checked && selected && (
-                <div
-                    className={`mt-3 rounded-md p-3 text-sm ${
-                        selected.correct
-                            ? "bg-emerald-50 text-emerald-800"
-                            : "bg-amber-50 text-amber-800"
-                    }`}
-                >
-                    {selected.feedback}
-                </div>
-            )}
-        </div>
-    );
-};
-
 const RatioPractice = () => (
     <div className="space-y-4">
         <PracticeQuestion
+            questionId="same-ratio-scaling"
             prompt="A ramp with a 45° slope has a sloped surface of 3 m. A second ramp keeps the same 45° slope but its sloped surface is 6 m. What happens to height ÷ slope?"
             options={[
                 {
@@ -284,6 +214,7 @@ const RatioPractice = () => (
             ]}
         />
         <PracticeQuestion
+            questionId="same-ratio-angle"
             prompt="Two ramps have sloped surfaces of the same 4 m length, but one rises at 20° and the other at 50°. Which statement is true?"
             options={[
                 {
